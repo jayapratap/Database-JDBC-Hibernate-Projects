@@ -24,7 +24,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-		//Getting all the brands in the DB.
+		//***Getting all the brands in the DB***
 		List<Brand> brands = jdbcOps.getBrands(con);
 		for (Brand brand : brands) {
 			System.out.println(brand.toString()+"\\n");
@@ -32,7 +32,7 @@ public class Main {
 		System.out.println("------------------------------");
 		
 		
-		//Geting brand by brandID
+		//***Geting brand by brandID***
 		System.out.println("Please enter the brand ID: ");
 		Scanner sc = new Scanner(System.in);
 		int id = sc.nextInt();
@@ -41,6 +41,7 @@ public class Main {
 		System.out.println("------------------------------");
 		
 		
+		//***Inserting a new brand***
 		//brandID is autoincremented in the database
 		System.out.print("Please enter the brand name to insert into DB");
 		sc.nextLine();
