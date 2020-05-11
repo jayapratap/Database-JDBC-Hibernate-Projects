@@ -1,0 +1,11 @@
+The procedure for the callable statement.
+
+
+DELIMITER //
+
+CREATE PROCEDURE insertBrand (IN bname varchar(45))
+BEGIN
+INSERT INTO brands (brandname) values (bname);
+END //
+
+DELIMITER ;
